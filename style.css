@@ -1,0 +1,29 @@
+@font-face {
+  font-family: DepartureMono-Regular;
+  src: url(DepartureMono-Regular.otf);
+}
+
+* {
+  font-family: DepartureMono-regular;
+  background-color: black;
+  color: white;
+}
+
+#prompt {
+  font-size: 1em;
+}
+
+#cursor {
+  display: inline-block;
+  background-color: white;
+  width: 7.5px;
+  height: 16px;
+  animation: cursor 1s step-end infinite;
+  translate: 0px 2.5px;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}
