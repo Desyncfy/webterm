@@ -3,7 +3,7 @@ document.onkeydown = (e) => {
     e.preventDefault();
     document.getElementById("prompt").textContent += e.key;
   }
-  if (e.key === "Backspace" && document.getElementById("prompt").textContent.length > 15) {
+  if (e.key === "Backspace" && document.getElementById("prompt").textContent.length > 16) {
     e.preventDefault();
     document.getElementById("prompt").textContent = document.getElementById("prompt").textContent.slice(0, -1);
   }
@@ -15,7 +15,7 @@ document.onkeydown = (e) => {
     document.getElementById("prompt").appendChild(document.createElement("br"));
     document.getElementById("cursor").remove();
     cursor.id = "cursor";
-    prompt.textContent = document.getElementById("prompt").textContent.slice(0, 15);
+    prompt.textContent = document.getElementById("prompt").textContent.slice(0, 16);
     document.getElementById("prompt").id = "";
     prompt.id = "prompt";
     document.querySelector("body").appendChild(prompt);
